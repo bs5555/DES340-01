@@ -46,14 +46,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*End of CSS reset===============================*/
-
+/*End of the CSS reset====================*/
 body{
-  background:#fff;
-  color:#000;
-  font-size:min(max(2vw,12px),24px);
-}
 
-h1{font-size:2em; line-height:1.6em; margin-bottom:1em;}
-p{font-size:0.8em; line-height:1.6em; margin-bottom:1em; max-width:60ch; text-align: justify; hyphens="auto"}
-div.textframe{padding:10vw;}
+font-family:'Merriweather','Arial','Helvetica','Roboto',sans-serif;
+
+  font-size:min(max(2vw,1em),2em); }
+div{padding:5em; max-width:60ch;}
+p{font-size:1em; line-height:1.6em; margin:0 0 1em 0;}
+h1{font-size:2em; line-height:1.6em; margin:0 0 1em 0;}
