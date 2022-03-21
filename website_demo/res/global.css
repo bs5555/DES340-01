@@ -1,0 +1,24 @@
+:root{
+  --text : #333;
+  --hover : #0cf;
+}
+
+body{font-family: 'Poppins', sans-serif;}
+
+div.header{position:fixed; top:0; left:0; right:0; background:#fff;
+display:grid; grid-template-columns: 4vmax 1fr 1fr;
+border-bottom:1px solid #ccc;
+}
+div.logo{
+  background-image:url(favicon.svg);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: 60%;
+  width:4vmax; height:4vmax;}
+div.name{align-self:center;
+  font-size:0.7em; color:var(--text); font-weight:700;}
+div.contact{align-self:center; justify-self:end; padding-right:1vmax;
+   font-size:0.7em;
+}
+div.contact a{text-decoration:none; color:var(--text);}
+div.contact a:hover{color:var(--hover);}
