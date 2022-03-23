@@ -7,11 +7,24 @@ div.d2{background:rgba(0,0,255,0.5);}
 div.d3{background:rgba(0,255,0,0.5);}
 div.d4{background:rgba(255,0,255,0.5);}
 
+video.bgvideo{width:100%; height:100vh;
+  object-fit:cover;
+  object-position:center center;
+}
+
 div.head{background:rgba(0,0,0,0.5);
   position:fixed;
   top:0; left:0; right:0;
-  padding:20px;
+  padding:40px;
+  z-index:10000;
+  background-image:url(char.svg);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size:10%;
 }
+
+img.logo{width:10vw;}
+
 img.hero{width:100%; height:100vh;
   object-fit:cover;
   object-position:center center;

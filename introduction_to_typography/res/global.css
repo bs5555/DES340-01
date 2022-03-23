@@ -1,57 +1,24 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/*End of the CSS reset====================*/
 body{
-
 font-family:'Merriweather','Arial','Helvetica','Roboto',sans-serif;
-
-  font-size:min(max(2vw,1em),2em); }
+font-size:min(max(2vw,1em),1.5em);
+}
 div{padding:5em; max-width:60ch;}
 p{font-size:1em; line-height:1.6em; margin:0 0 1em 0;}
-h1{font-size:2em; line-height:1.6em; margin:0 0 1em 0;}
+h1{font-size:3em; line-height:1.6em; margin:0 0 1em 0; text-transform:uppercase;}
+h2{font-size:1.2em; line-height:1.6em; margin:0 0 4em 0; font-weight:bold; color:#f0c;}
+h3{font-size:1.2em; line-height:1.6em; margin:2em 0 1em 0; font-weight:bold;  color:#f0c;}
+
+ul{list-style-type: decimal; margin:0 0 0 2em;}
+li{font-size:1em; line-height:1.6em; margin:0 0 1em 0;}
+a:link{color:#369;}
+a:visited{color:#369;}
+a:hover{color:#0cf;}
+a:active{color:#f33;}
+hr{border:none; height:4px; color:#0cf; background:#0cf; width:50%; margin:2em auto;}
+
+table.type1{width:100%; margin:0 0 1em 0;}
+table.type1 td{border-bottom:1px solid #ccc; border-collapse:collapse; padding:0.5em 1em;}
+
+table.type2{width:100%; margin:0 0 1em 0;}
+table.type2 tr:nth-child(even){background:#eee;}
+table.type2 td{padding:0.5em 1em;}
