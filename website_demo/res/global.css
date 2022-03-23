@@ -3,11 +3,53 @@
   --hover : #0cf;
 }
 
-body{font-family: 'Poppins', sans-serif;}
+body{
+  font-family: 'Poppins', 'Arial', 'Helvetica', 'Roboto', sans-serif;
+  font-size:min(max(2vw,1em),1.5em);
+}
+
+div.rtf p{font-size:1em; line-height:1.6em; margin:0 0 1em 0;}
+div.rtf h1{font-size:3em; line-height:1.6em; margin:0 0 1em 0; text-transform:uppercase;}
+div.rtf h2{font-size:1.2em; line-height:1.6em; margin:0 0 4em 0; font-weight:bold; color:#f0c;}
+div.rtf h3{font-size:1.2em; line-height:1.6em; margin:2em 0 1em 0; font-weight:bold;  color:#f0c;}
+
+div.rtf ul{list-style-type: decimal; margin:0 0 0 2em;}
+div.rtf li{font-size:1em; line-height:1.6em; margin:0 0 1em 0;}
+div.rtf a:link{color:#369;}
+div.rtf a:visited{color:#369;}
+div.rtf a:hover{color:#0cf;}
+div.rtf a:active{color:#f33;}
+div.rtf hr{border:none; height:4px; color:#0cf; background:#0cf; width:50%; margin:2em auto;}
+
+div.rtf table.type1{width:100%; margin:0 0 1em 0;}
+div.rtf table.type1 td{border-bottom:1px solid #ccc; border-collapse:collapse; padding:0.5em 1em;}
+
+div.rtf table.type2{width:100%; margin:0 0 1em 0;}
+div.rtf table.type2 tr:nth-child(even){background:#eee;}
+div.rtf table.type2 td{padding:0.5em 1em;}
+
+div.frame{padding-top:50px;
+  max-width:1000px;
+  margin:0 auto;
+}
+div.slide{
+  position:relative;
+  min-height:100vh;
+}
+
+img.heroimg{width:100%; height:100vh;
+  object-fit: cover;
+  object-position: bottom center;
+}
+
+div.herotxt{position:absolute; top:50%; right:0; color:#000;
+  background:rgba(255,255,255,0.6); padding:2em;
+}
 
 div.header{position:fixed; top:0; left:0; right:0; background:#fff;
 display:grid; grid-template-columns: 4vmax 1fr 1fr;
 border-bottom:1px solid #ccc;
+z-index: 10000;
 }
 div.logo{
   background-image:url(favicon.svg);
