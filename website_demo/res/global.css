@@ -37,6 +37,20 @@ div.slide{
   min-height:100vh;
 }
 
+div.grid{display:grid; grid-template-columns: 1fr 1fr; grid-gap:4vh; min-height:100vh;}
+img.grid-img{max-width:100%; align-self:center; justify-self:center;}
+div.grid-txt{align-self:center; justify-self:center;}
+
+@media only screen and (max-width: 600px) {
+  div.grid{
+    grid-template-columns: 1fr;
+    grid-gap:0;
+  }
+  div.grid-txt{padding:4vh;}
+}
+
+
+
 img.heroimg{width:100%; height:100vh;
   object-fit: cover;
   object-position: bottom center;
